@@ -1,0 +1,52 @@
+git config --global user.name "name"
+
+git config --global user.email emailID
+
+git config --global user.signingKey .....git_sshs_keys
+
+git config list
+
+
+
+
+echo "# turntabl_Mentorship_Program_4_Python" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mawu01/turntabl_Mentorship_Program_4_Python.git
+git push -u origin main
+
+
+Password:nk0v$AFyKmYnpv2prd6!NV70RkqCcovLq372Eh5vTWmq^pB0dE4
+
+
+Access token: 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
+
+
+
+
+The error may be, the computer has saved a git username and password so if you shift to another account the error 403 will appear. Below is the solution
+For Windows you can find the keys here:
+
+control panel > user accounts > credential manager > Windows credentials > Generic credentials
+
+Next, remove the Github keys.
+
+In mac
+1-In Finder, search for the Keychain Access app.
+2In Keychain Access, search for github.com.
+3-Find the "internet password" entry for github.com.
+4-Edit or delete the entry accordingly.
+
+
+Solution to te Error 403: 
+This means that the remote computer has denied access from ssh'ing
+into it, due to invalid authentication
+
+2. Also, if your machine had a github account which is already registered in its windows credentials, 
+but now attempting to use another github account: You may want to go and edit it or delete the old account/credentials-Conflit
+
+3. In the event of using a two factor authentication with your github account, you may have to generate a token (personal access token) with this link:
+https://github.com/settings/tokens 
+
